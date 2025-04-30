@@ -1,0 +1,64 @@
+:root {
+    --fuente-monstserrat: "Montserrat", sans-serif;
+    --color-principal: #AB2A3E;
+    --color-secundario: #A2A2A2;
+    --color-blanco: #FFFFFF;
+    --color-azulprincipal: #0A141D;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.imagen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+
+.swal2-popup {
+    border-radius: 15px;
+    background-color: var(--color-blanco);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px 15px;
+    display: flex;
+    gap: 5px;
+    width: 450px;
+}
+
+.swal2-title {
+    font-family: var(--fuente-monstserrat);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+
+.swal2-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 75px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #e4f9e2;
+    margin: 10px auto;
+
+}

@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    display: flex;
+}
+
+
+main {
+    margin-left: 250px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(203, 199, 199, 0.1);
+    width: 100%;
+
+}
+
+.procesar-pago {
+    width: 80%;
+    height: auto;
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    overflow: auto;
+
+}
+
+.datos-contribuyente {
+    background-color: rgba(231, 236, 240, 0.3);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 750px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 10%;
+}
+
+.datos-contribuyente p {
+    font-family: var(--fuente-monstserrat);
+    font-size: 1rem;
+    color: black;
+    margin: 0px;
+}
+
+.datos-contribuyente span {
+    font-weight: bold;
+}
+
+.container {
+    border-radius: 10px;
+    padding: 20px 40px;
+    width: 750px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(231, 236, 240, 0.3);
+    margin-bottom: 0px;
+    margin-left: 10%;
+
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.titulo-metodo {
+    font-family: var(--fuente-monstserrat);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #007bff;
+    text-align: center;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 180px;
+}
+
+
+.payment-method {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuente-monstserrat);
+    font-size: 1rem;
+}
+
+
+.payment-method input[type="radio"] {
+    margin-right: 10px;
+}
+
+.logos {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+}
+
+.logos img {
+    width: 40px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.payment-fields {
+    display: none;
+    transition: height 0.3s ease;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 15px;
+    padding: 15px 30px;
+}
+
+
+
+.payment-fields.show {
+    display: block;
+}
+
+.terms {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-family: var(--fuente-monstserrat);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.terms input {
+    margin-right: 10px;
+    font-family: var(--fuente-monstserrat);
+    font-size: 1rem;
+}
+
+
+.terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+#pay-button {
+
+    padding: 10px;
+    font-family: var(--fuente-monstserrat);
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100px;
+    cursor: pointer;
+    margin-left: 40%;
+}
+
+#pay-button:hover {
+    background-color: #0056b3;
+}
+
+.division {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.container1-payment,
+.container-payment {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.container1-payment input {
+    width: 92%;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    border-bottom: 1px solid #6e6e6e;
+    font-family: var(--fuente-monstserrat);
+    font-size: 1rem;
+}
+
+.container1-payment select,
+.container-payment select {
+    width: 95%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #6e6e6e;
+    outline: none;
+    padding: 5px 10px;
+    appearance: none;
+    font-size: 1rem;
+    font-family: var(--fuente-monstserrat);
+
+}
+
+.container-payment input {
+    width: 88%;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    border-bottom: 1px solid #6e6e6e;
+    font-family: var(--fuente-monstserrat);
+    font-size: 1rem;
+}
+
+
+option {
+    appearance: none;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border: none;
+    font-family: var(--fuente-monstserrat);
+
+}
+
+option:hover {
+    background-color: #0056b3;
+}
+
+
+select::-ms-expand {
+    display: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+
+
+.swal2-popup {
+    border-radius: 15px;
+    background-color: var(--color-blanco);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px 15px;
+    display: flex;
+    gap: 5px;
+    width: 450px;
+}
+
+
+.swal2-title {
+    font-family: var(--fuente-monstserrat);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+
+.swal2-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 75px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 auto;
+    transition: none !important;
+}
+
+
+.swal2-icon-error .swal2-x-mark {
+    margin-top: -80px;
+    font-size: 1rem;
+    animation: none !important;
+    transition: none !important;
+}
+
+
+@media (max-width: 1320px) {
+
+    main {
+        align-items: flex-start;
+        padding: 20px;
+        height: auto;
+
+    }
+
+    .procesar-pago {
+        width: 90%;
+        padding: 40px 20px;
+        margin-top: 30px;
+    }
+
+    .datos-contribuyente {
+        margin-left: 5%;
+    }
+
+    .container {
+        margin-bottom: 0px;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 1110px) {
+    main {
+        margin-left: 0px;
+    }
+
+    .procesar-pago {
+
+        padding: 40px 20px;
+        margin: 0px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .procesar-pago {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+}

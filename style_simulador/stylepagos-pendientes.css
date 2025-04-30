@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+main {
+    margin-left: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(203, 199, 199, 0.1);
+    overflow-y: auto;
+}
+
+.pagos-pendientes {
+    width: 80%;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+
+}
+
+.titulo-pagos {
+    font-family: var(--fuente-monstserrat);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #007bff;
+    text-align: left;
+    margin: 10px;
+}
+
+.form-1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 0px;
+    height: 60px;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+
+    height: auto;
+
+}
+
+.form-filtro {
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-filtro label {
+    font-family: var(--fuente-monstserrat);
+    font-size: 0.9rem;
+}
+
+select {
+    padding: 5px;
+    font-size: 0.9rem;
+    color: #333;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+    width: 150px;
+    transition: all 0.3s ease;
+}
+
+
+option {
+    appearance: none;
+    font-size: 0.9rem;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border: none;
+}
+
+
+option:hover {
+    background-color: #0056b3;
+}
+
+
+select::-ms-expand {
+    display: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+
+.monto-pagar {
+    width: 350px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 5px 25px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.total {
+    width: 350px;
+}
+
+#total-monto {
+    font-family: var(--fuente-monstserrat);
+    font-size: 0.9rem;
+}
+
+.monto-pagar button {
+    padding: 10px;
+    font-weight: 500;
+    font-family: var(--fuente-monstserrat);
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100px;
+
+}
+
+.monto-pagar button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 0.92rem;
+    font-family: var(--fuente-monstserrat);
+
+}
+
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+td,
+th {
+    border-bottom: 2px solid #ddd;
+}
+
+
+td:last-child {
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 1320px) {
+
+    main {
+        align-items: flex-start;
+        padding: 20px;
+        height: auto;
+
+    }
+
+    .pagos-pendientes {
+        width: 90%;
+        padding: 40px 20px;
+    }
+
+}
+
+@media (max-width: 1110px) {
+    main {
+        margin-left: 0px;
+    }
+
+    .pagos-pendientes {
+
+        padding: 40px 20px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pagos-pendientes {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+}

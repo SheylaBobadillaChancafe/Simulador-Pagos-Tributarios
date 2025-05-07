@@ -6,29 +6,61 @@
     --color-azulprincipal: #0A141D;
 }
 
+
 body {
     margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    overflow: hidden;
 }
 
-.imagen {
-    width: 100vw;
-    height: 100vh;
+main {
+    margin-left: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(203, 199, 199, 0.1);
+    overflow-y: auto;
+    gap: 30px;
 }
 
-.imagen img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
+
+.descargar-pdf button{
+    margin-top: 50px;
+    padding: 10px;
+    font-weight: 500;
+    font-family: var(--fuente-monstserrat);
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 200px;
 }
+
+.descargar-pdf button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .swal2-popup {

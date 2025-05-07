@@ -148,7 +148,7 @@ $idUsuariotributoArray = [];
         var id_usuario = <?php echo $_SESSION['id_usuario']; ?>;
     </script>
 
-    <script src="../script_simulador/hsitorialpagos.js"></script>
+    <script src="../script_simulador/historialpagos.js"></script>
     <script src="../script_simulador/script.js"></script>
 </body>
 

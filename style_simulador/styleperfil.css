@@ -22,7 +22,7 @@ main {
 
 
 .datos-personales {
-    width: 65%;
+    width: 750px;
     height: 600px;
     margin-top: 50px;
     padding: 10px 10px;
@@ -179,7 +179,7 @@ h2 {
 
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1145px) {
     main {
         margin-left: 0px;
         padding: 20px 40px;

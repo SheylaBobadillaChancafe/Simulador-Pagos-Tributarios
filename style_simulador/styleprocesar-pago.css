@@ -20,7 +20,7 @@ main {
 }
 
 .procesar-pago {
-    width: 80%;
+    width: 1000px;
     height: auto;
     margin-top: 90px;
     margin-left: 50px;
@@ -335,7 +335,7 @@ select:focus {
     }
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1145px) {
     main {
         margin-left: 0px;
     }

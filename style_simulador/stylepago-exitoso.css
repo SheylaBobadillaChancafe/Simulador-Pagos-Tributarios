@@ -10,28 +10,35 @@
 body {
     margin: 0;
     display: flex;
-    height: 100vh;
 }
 
 main {
     margin-left: 250px;
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 1;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(203, 199, 199, 0.1);
-    overflow-y: auto;
-    gap: 30px;
+    width: 100%;
+    padding: 20px 20px;
 }
 
+.comprobante {
+    width: 900px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
 
-.descargar-pdf button{
+.descargar-pdf button {
     margin-top: 50px;
     padding: 10px;
     font-weight: 500;
@@ -49,19 +56,59 @@ main {
     background-color: #0056b3;
 }
 
+.vista-previa {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    padding: 30px 80px;
+    border-radius: 5px;
+}
 
+.vista-previa p {
+    font-size: 0.9rem;
+    font-family: var(--fuente-monstserrat);
 
+}
 
+.vista-previa span {
+    display: block;
+    text-align: center;
+}
 
+.muni {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
 
+.muni p {
+    text-align: center;
+}
 
+.muni img {
+    width: 40px;
+}
 
+table {
+    border: none;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    font-family: var(--fuente-monstserrat);
+    text-align: center;
+}
 
-
-
-
-
-
+th {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    font-weight: bold;
+}
 
 .swal2-popup {
     border-radius: 15px;
@@ -92,5 +139,47 @@ main {
     border-radius: 50%;
     background-color: #e4f9e2;
     margin: 10px auto;
+
+}
+
+
+
+@media (max-width: 1145px) {
+    main {
+        margin-left: 0px;
+        padding: 20px 40px;
+    }
+
+    .comprobante {
+        width: 650px;
+        margin-bottom: 20px;
+
+    }
+
+    .vista-previa {
+        width: 90%;
+        padding: 30px 30px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    main {
+        margin-left: 0px;
+        padding: 20px 5px;
+    }
+
+    .comprobante {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+
+    }
+
+    .vista-previa {
+        width: 90%;
+        padding: 30px 30px;
+    }
+
 
 }
